@@ -1,0 +1,20 @@
+[package]
+name = "helloworld"
+version = "0.1.0"
+edition = "2021"
+authors = ["ablozhou <ablozhou@gmail.com>"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+solana-program = "1.8.5" # newest released Solana SDK 1.8.5
+num-derive = "0.3"
+thiserror = "1.0"
+num-traits = "0.2"
+arrayref = "0.3.6"
+num_enum = "0.5.1"
+
+[lib]
+crate-type = ["cdylib", "lib"]  # generate library type

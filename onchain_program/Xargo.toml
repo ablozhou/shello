@@ -1,0 +1,3 @@
+# for multi-platform
+[target.bpfel-unknown-unknown.dependencies.std]
+features = []
